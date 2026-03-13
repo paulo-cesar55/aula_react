@@ -1,9 +1,9 @@
 
-    'use client'; 
+'use client'; 
 import { useState, useEffect } from 'react';
 
 export default function NumeroAleatorio() {
-  const [numero, setNumero] = useState(0);
+  const [numero, setNumero] = useState("- -");
 
 
   const gerarNumero = () => {
@@ -18,12 +18,12 @@ export default function NumeroAleatorio() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h1>Número Aleatório: {numero}</h1>
+      <h3>Número Gerado: {numero}</h3>
       <button 
         onClick={gerarNumero}
         style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}
       >
-        Gerar Novo Número
+        Gerar Aleatório
       </button>
     </div>
   );
